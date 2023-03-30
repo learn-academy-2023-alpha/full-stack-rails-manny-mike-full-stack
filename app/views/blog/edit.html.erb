@@ -1,4 +1,4 @@
-<h2>Add a new Blog</h2>
+<h2>Edit a new Blog</h2>
 
 <%= form_with model: @blog do |form| %>
   <%= form.label :title %>
@@ -7,7 +7,6 @@
   <%= form.label :content %>
   <%= form.text_field :content %>
 
-  <%= form.submit "Add Blog" %>
-
+  <%= form.submit "Edit Blog" %>
 <% end %>
 <h1><%= link_to 'All the Blogs', blogs_path %></h1>
